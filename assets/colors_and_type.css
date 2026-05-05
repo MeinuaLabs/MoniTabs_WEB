@@ -1,0 +1,205 @@
+/* ============================================================================
+   MoniTabs — Colors & Type
+   ----------------------------------------------------------------------------
+   Source of truth: app/src/main/java/com/debttracker/app/ui/theme/*.kt
+   (Color.kt, Type.kt, Theme.kt)
+
+   Fonts: Inter (UI) and JetBrains Mono (numeric / monospace).
+   The Android app loads these via Google Fonts downloadable-fonts provider;
+   here we pull from Google Fonts CSS. No substitution — exact match.
+============================================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ── Brand ─────────────────────────────────────────────────────────────── */
+  --mt-purple:          #5E5CE6;  /* MonitabPurple — primary accent */
+  --mt-purple-15:       rgba(94, 92, 230, 0.15);  /* active pill / chip bg */
+  --mt-purple-12:       rgba(94, 92, 230, 0.12);  /* selection highlight */
+  --mt-purple-40:       rgba(94, 92, 230, 0.40);  /* shadow / glow */
+  --mt-purple-60:       rgba(94, 92, 230, 0.60);  /* spot shadow */
+  --mt-purple-85:       rgba(94, 92, 230, 0.85);  /* active border */
+
+  /* ── Semantic feedback ─────────────────────────────────────────────────── */
+  --mt-danger:          #EF5350;  /* DangerRed — destructive */
+  --mt-income:          #30D158;  /* IncomeGreen — wallet positive */
+  --mt-spending:        #FF453A;  /* SpendingRed — wallet negative */
+
+  /* ── Progress ring (0% → 100% paid) ────────────────────────────────────── */
+  --mt-progress-red:    #EF4444;
+  --mt-progress-rose:   #F43F5E;
+  --mt-progress-orange: #F97316;
+  --mt-progress-yellow: #EAB308;
+  --mt-progress-lime:   #84CC16;
+  --mt-progress-green:  #22C55E;
+
+  /* ── Transaction labels (wallet) ───────────────────────────────────────── */
+  --mt-label-active:    #00BFA5;  /* Active income */
+  --mt-label-passive:   #2979FF;  /* Passive income */
+  --mt-label-other:     #9C6FFF;  /* Other income */
+  --mt-label-needs:     #FF4081;  /* Needs spending */
+  --mt-label-wants:     #FFAB00;  /* Wants spending */
+  --mt-label-savings:   #00C853;  /* Savings & debts */
+
+  /* ── Dark theme (default — the app ships dark) ─────────────────────────── */
+  --mt-bg:              #121212;  /* Scaffold background */
+  --mt-surface:         #1E1E1E;  /* Cards, sheets */
+  --mt-input-bg:        #252525;  /* Text-field container */
+  --mt-settings-bg:     #2A2A2A;  /* Settings blocks */
+  --mt-ring-track:      #2A2A3A;  /* Progress-ring unfilled arc */
+  --mt-drag-handle:     #3A3A4A;  /* Bottom-sheet drag handle */
+
+  --mt-fg:              #FFFFFF;  /* Text primary */
+  --mt-fg-muted:        #8E8E93;  /* Text secondary (iOS gray) */
+  --mt-fg-faint:        rgba(142, 142, 147, 0.45); /* Tertiary hint */
+
+  --mt-border-subtle:   rgba(255, 255, 255, 0.10);
+  --mt-border-active:   #5E5CE6;
+  --mt-divider:         rgba(255, 255, 255, 0.20);
+
+  /* ── Spacing scale (dp → px; 1dp ≈ 1px at mdpi baseline) ───────────────── */
+  --mt-space-1:  4px;
+  --mt-space-2:  8px;
+  --mt-space-3:  12px;
+  --mt-space-4:  16px;   /* screen gutter */
+  --mt-space-5:  20px;   /* card padding */
+  --mt-space-6:  24px;   /* top-bar gutter, large spacing */
+  --mt-space-8:  32px;
+  --mt-space-10: 40px;
+
+  /* ── Radii ─────────────────────────────────────────────────────────────── */
+  --mt-radius-sm:   8px;    /* small chips, menu items */
+  --mt-radius-md:   12px;   /* buttons, inputs, active pill tab */
+  --mt-radius-lg:   16px;   /* cards, outer tab container */
+  --mt-radius-xl:   24px;   /* hero cards (totals header, empty state) */
+  --mt-radius-sheet: 32px;  /* bottom-sheet top corners */
+  --mt-radius-pill:  9999px;
+
+  /* ── Type — font families ─────────────────────────────────────────────── */
+  --mt-font-ui:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mt-font-mono:  'JetBrains Mono', ui-monospace, 'SF Mono', Consolas, monospace;
+
+  /* ── Type — Material3 15-slot scale (verbatim from Type.kt) ───────────── */
+  /* Display */
+  --mt-display-lg-size: 57px;  --mt-display-lg-lh: 64px;  --mt-display-lg-weight: 700;  --mt-display-lg-tracking: -0.25px;
+  --mt-display-md-size: 45px;  --mt-display-md-lh: 52px;  --mt-display-md-weight: 700;
+  --mt-display-sm-size: 36px;  --mt-display-sm-lh: 44px;  --mt-display-sm-weight: 600;
+  /* Headline */
+  --mt-headline-lg-size: 32px; --mt-headline-lg-lh: 40px; --mt-headline-lg-weight: 700;
+  --mt-headline-md-size: 28px; --mt-headline-md-lh: 36px; --mt-headline-md-weight: 700;
+  --mt-headline-sm-size: 24px; --mt-headline-sm-lh: 32px; --mt-headline-sm-weight: 600;
+  /* Title */
+  --mt-title-lg-size: 22px;    --mt-title-lg-lh: 28px;    --mt-title-lg-weight: 600;
+  --mt-title-md-size: 16px;    --mt-title-md-lh: 24px;    --mt-title-md-weight: 600;  --mt-title-md-tracking: 0.15px;
+  --mt-title-sm-size: 14px;    --mt-title-sm-lh: 20px;    --mt-title-sm-weight: 500;  --mt-title-sm-tracking: 0.1px;
+  /* Body */
+  --mt-body-lg-size: 16px;     --mt-body-lg-lh: 24px;     --mt-body-lg-weight: 400;   --mt-body-lg-tracking: 0.5px;
+  --mt-body-md-size: 14px;     --mt-body-md-lh: 20px;     --mt-body-md-weight: 400;   --mt-body-md-tracking: 0.25px;
+  --mt-body-sm-size: 12px;     --mt-body-sm-lh: 16px;     --mt-body-sm-weight: 400;   --mt-body-sm-tracking: 0.4px;
+  /* Label */
+  --mt-label-lg-size: 14px;    --mt-label-lg-lh: 20px;    --mt-label-lg-weight: 500;  --mt-label-lg-tracking: 0.1px;
+  --mt-label-md-size: 12px;    --mt-label-md-lh: 16px;    --mt-label-md-weight: 500;  --mt-label-md-tracking: 0.5px;
+  --mt-label-sm-size: 11px;    --mt-label-sm-lh: 16px;    --mt-label-sm-weight: 500;  --mt-label-sm-tracking: 0.5px;
+
+  /* ── Custom app patterns ──────────────────────────────────────────────── */
+  /* "NO DEBTS / TOTAL" section caps-eyebrow */
+  --mt-eyebrow-size: 12px;     --mt-eyebrow-weight: 700; --mt-eyebrow-tracking: 0.8px;
+  /* Debt name row */
+  --mt-row-name-size: 14px;    --mt-row-name-weight: 700;
+  /* Debt amount value */
+  --mt-row-amount-size: 14px;  --mt-row-amount-weight: 700;
+  /* Huge card value (Totals header "26.sp bold") */
+  --mt-card-value-size: 26px;  --mt-card-value-weight: 700;
+  /* Tiny helper ("tap to see breakdown") */
+  --mt-hint-size: 10px;
+
+  /* ── Elevation / shadows ──────────────────────────────────────────────── */
+  /* Monitab leans flat; primary "elevation" is the neon-glow on the FAB and
+     active wallet card. Cards themselves have no drop shadow — they separate
+     via surface color + 1dp subtle border of same surface color. */
+  --mt-glow-fab:
+      0 8px 24px var(--mt-purple-40),
+      0 2px 6px var(--mt-purple-60);
+  --mt-glow-card-inner: 0 0 0 2px var(--mt-purple-85);
+  --mt-glow-card-halo:  0 0 28px var(--mt-purple-40);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Light theme — applied via [data-theme="light"] on any ancestor.
+   Values from Color.kt → lightMonitabColors().
+────────────────────────────────────────────────────────────────────────── */
+[data-theme="light"] {
+  --mt-bg:            #F2F2F7;
+  --mt-surface:       #FFFFFF;
+  --mt-input-bg:      #EFEFF4;
+  --mt-settings-bg:   #FFFFFF;
+  --mt-ring-track:    #DDDDE8;
+  --mt-drag-handle:   #C7C7CC;
+
+  --mt-fg:            #1C1C1E;
+  --mt-fg-muted:      #8E8E93;
+  --mt-fg-faint:      rgba(142, 142, 147, 0.45);
+
+  --mt-border-subtle: rgba(0, 0, 0, 0.15);
+  --mt-divider:       rgba(0, 0, 0, 0.20);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Semantic element styles — drop-in tags that look right on a .mt-surface.
+   Wrap any block in `.mt` to opt in to the base stack.
+────────────────────────────────────────────────────────────────────────── */
+.mt,
+.mt * { box-sizing: border-box; }
+
+.mt {
+  font-family: var(--mt-font-ui);
+  color: var(--mt-fg);
+  background: var(--mt-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+/* ── Type aliases ───────────────────────────────────────────────────────── */
+.mt-display-lg  { font: var(--mt-display-lg-weight) var(--mt-display-lg-size)/var(--mt-display-lg-lh) var(--mt-font-ui); letter-spacing: var(--mt-display-lg-tracking); }
+.mt-display-md  { font: var(--mt-display-md-weight) var(--mt-display-md-size)/var(--mt-display-md-lh) var(--mt-font-ui); }
+.mt-display-sm  { font: var(--mt-display-sm-weight) var(--mt-display-sm-size)/var(--mt-display-sm-lh) var(--mt-font-ui); }
+.mt-headline-lg { font: var(--mt-headline-lg-weight) var(--mt-headline-lg-size)/var(--mt-headline-lg-lh) var(--mt-font-ui); }
+.mt-headline-md { font: var(--mt-headline-md-weight) var(--mt-headline-md-size)/var(--mt-headline-md-lh) var(--mt-font-ui); }
+.mt-headline-sm { font: var(--mt-headline-sm-weight) var(--mt-headline-sm-size)/var(--mt-headline-sm-lh) var(--mt-font-ui); }
+.mt-title-lg    { font: var(--mt-title-lg-weight)    var(--mt-title-lg-size)/var(--mt-title-lg-lh)   var(--mt-font-ui); }
+.mt-title-md    { font: var(--mt-title-md-weight)    var(--mt-title-md-size)/var(--mt-title-md-lh)   var(--mt-font-ui); letter-spacing: var(--mt-title-md-tracking); }
+.mt-title-sm    { font: var(--mt-title-sm-weight)    var(--mt-title-sm-size)/var(--mt-title-sm-lh)   var(--mt-font-ui); letter-spacing: var(--mt-title-sm-tracking); }
+.mt-body-lg     { font: var(--mt-body-lg-weight)     var(--mt-body-lg-size)/var(--mt-body-lg-lh)     var(--mt-font-ui); letter-spacing: var(--mt-body-lg-tracking); }
+.mt-body-md     { font: var(--mt-body-md-weight)     var(--mt-body-md-size)/var(--mt-body-md-lh)     var(--mt-font-ui); letter-spacing: var(--mt-body-md-tracking); }
+.mt-body-sm     { font: var(--mt-body-sm-weight)     var(--mt-body-sm-size)/var(--mt-body-sm-lh)     var(--mt-font-ui); letter-spacing: var(--mt-body-sm-tracking); }
+.mt-label-lg    { font: var(--mt-label-lg-weight)    var(--mt-label-lg-size)/var(--mt-label-lg-lh)   var(--mt-font-ui); letter-spacing: var(--mt-label-lg-tracking); }
+.mt-label-md    { font: var(--mt-label-md-weight)    var(--mt-label-md-size)/var(--mt-label-md-lh)   var(--mt-font-ui); letter-spacing: var(--mt-label-md-tracking); }
+.mt-label-sm    { font: var(--mt-label-sm-weight)    var(--mt-label-sm-size)/var(--mt-label-sm-lh)   var(--mt-font-ui); letter-spacing: var(--mt-label-sm-tracking); }
+
+/* Custom patterns */
+.mt-eyebrow {
+  font: var(--mt-eyebrow-weight) var(--mt-eyebrow-size)/1 var(--mt-font-ui);
+  letter-spacing: var(--mt-eyebrow-tracking);
+  color: var(--mt-fg-muted);
+  text-transform: uppercase;
+}
+.mt-card-value {
+  font: var(--mt-card-value-weight) var(--mt-card-value-size)/1.1 var(--mt-font-ui);
+  color: var(--mt-fg);
+}
+.mt-hint {
+  font: 400 var(--mt-hint-size)/1.2 var(--mt-font-ui);
+  color: var(--mt-fg-faint);
+}
+.mt-mono { font-family: var(--mt-font-mono); }
+
+/* ── Surface primitives ─────────────────────────────────────────────────── */
+.mt-surface    { background: var(--mt-surface);     border-radius: var(--mt-radius-lg); }
+.mt-card       { background: var(--mt-surface);     border: 1px solid var(--mt-surface); border-radius: var(--mt-radius-xl); padding: 18px var(--mt-space-5); }
+.mt-input-bg   { background: var(--mt-input-bg);    border-radius: var(--mt-radius-md); }
+
+/* ── Focus ring (purple, matches borderActive) ──────────────────────────── */
+.mt *:focus-visible {
+  outline: 2px solid var(--mt-purple);
+  outline-offset: 2px;
+}
