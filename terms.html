@@ -189,5 +189,40 @@
   </div>
 </footer>
 
+<script>
+  // TOC scroll-spy — highlights the current section link
+  (function(){
+    const tocLinks = Array.from(document.querySelectorAll('.legal-toc a'));
+    const sections = tocLinks
+      .map(link => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+    if (!sections.length) return;
+
+    const offset = 120;
+
+    function setActive(link){
+      tocLinks.forEach(a => a.classList.toggle('active', a === link));
+    }
+
+    function onScroll(){
+      let current = sections[0];
+      for (const section of sections){
+        if (section.getBoundingClientRect().top - offset <= 0) current = section;
+      }
+      const activeLink = tocLinks.find(a => a.getAttribute('href') === '#' + current.id);
+      if (activeLink) setActive(activeLink);
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => { onScroll(); ticking = false; });
+    });
+    tocLinks.forEach(link => link.addEventListener('click', () => setActive(link)));
+    onScroll();
+  })();
+</script>
+
 </body>
 </html>
