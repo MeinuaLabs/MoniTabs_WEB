@@ -378,5 +378,47 @@
   })();
 </script>
 
+<script>
+  // Nav scroll-spy — highlights the current section in the top nav
+  (function(){
+    const navLinks = Array.from(document.querySelectorAll('.topnav a'));
+    const sections = navLinks
+      .map(link => {
+        const hash = link.getAttribute('href');
+        return hash.startsWith('#') ? document.querySelector(hash) : null;
+      })
+      .filter(Boolean);
+    if (!sections.length) return;
+
+    const overviewLink = document.querySelector('.topnav a[href="index.html"]');
+    const offset = 120;
+
+    function setActive(link){
+      navLinks.forEach(a => a.classList.toggle('active', a === link));
+    }
+
+    function onScroll(){
+      let current = null;
+      for (const section of sections){
+        if (section.getBoundingClientRect().top - offset <= 0) current = section;
+      }
+      if (!current){
+        setActive(overviewLink);
+        return;
+      }
+      const activeLink = navLinks.find(a => a.getAttribute('href') === '#' + current.id);
+      setActive(activeLink || overviewLink);
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => { onScroll(); ticking = false; });
+    });
+    onScroll();
+  })();
+</script>
+
 </body>
 </html>
