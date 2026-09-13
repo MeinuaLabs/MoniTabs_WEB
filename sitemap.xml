@@ -20,13 +20,19 @@
   </url>
   <url>
     <loc>https://www.monitabs.com/blog/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.monitabs.com/blog/50-30-20-budget-rule.html</loc>
     <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.monitabs.com/blog/how-to-track-debts.html</loc>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
