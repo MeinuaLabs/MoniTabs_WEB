@@ -80,14 +80,15 @@ img, svg { display: block; max-width: 100%; }
   color: var(--mt-fg);
 }
 .eyebrow-pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--mt-progress-green); box-shadow: 0 0 8px var(--mt-progress-green); }
+h1.eyebrow-pill { margin: 0; }
 
-h1.title {
+.title {
   font: 700 clamp(40px, 6.4vw, 76px)/1.04 var(--mt-font-ui);
   letter-spacing: -0.03em;
   margin: 18px 0 18px;
   text-wrap: balance;
 }
-h1.title .accent { color: var(--mt-purple); }
+.title .accent { color: var(--mt-purple); }
 .lede {
   font: 400 18px/1.55 var(--mt-font-ui);
   color: var(--mt-fg-muted);
