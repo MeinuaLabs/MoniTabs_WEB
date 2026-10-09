@@ -30,6 +30,9 @@
 <meta name="twitter:description" content="Learn the 50/30/20 budgeting rule and use a simple money tracker to apply it — Needs, Wants, and Savings in three easy steps."/>
 <meta name="twitter:image" content="https://www.monitabs.com/assets/monitabs-logo.png"/>
 <link rel="canonical" href="https://www.monitabs.com/blog/50-30-20-budget-rule.html"/>
+<link rel="alternate" hreflang="en" href="https://www.monitabs.com/blog/50-30-20-budget-rule.html"/>
+<link rel="alternate" hreflang="ko" href="https://www.monitabs.com/ko/blog/household-budget-50-30-20.html"/>
+<link rel="alternate" hreflang="x-default" href="https://www.monitabs.com/blog/50-30-20-budget-rule.html"/>
 <link rel="icon" type="image/png" href="../assets/monitabs-logo.png"/>
 <link rel="stylesheet" href="../site.css"/>
 <script type="application/ld+json">
@@ -89,10 +92,25 @@
       <a href="../index.html#faq">FAQ</a>
       <a href="index.html" class="active">Blog</a>
     </nav>
-    <a class="topnav-cta" href="../index.html#download">
-      Get the app
-      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-    </a>
+    <div class="topbar-actions">
+      <div class="lang-menu">
+        <button class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="langList" aria-label="Change language">
+          <svg class="globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><span>EN</span><svg class="chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="lang-list" id="langList" aria-label="Language">
+          <li><a href="50-30-20-budget-rule.html" hreflang="en" lang="en" aria-current="true">
+            <span class="code">EN</span><span class="names"><span class="native">English</span></span><svg class="check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+          </a></li>
+          <li><a href="../ko/blog/household-budget-50-30-20.html" hreflang="ko" lang="ko">
+            <span class="code">KO</span><span class="names"><span class="native">한국어</span><span class="en-name">Korean</span></span><svg class="check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>
+          </a></li>
+        </ul>
+      </div>
+      <a class="topnav-cta" href="../index.html#download">
+        Get the app
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -172,6 +190,35 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Language menu — toggle, close on outside click / Esc, arrow-key navigation
+  (function(){
+    const menu = document.querySelector('.lang-menu');
+    if (!menu) return;
+    const btn = menu.querySelector('.lang-btn');
+    const items = Array.from(menu.querySelectorAll('.lang-list a'));
+    function setOpen(open, focusItem){
+      menu.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open);
+      if (open && focusItem) (items.find(a => a.getAttribute('aria-current') === 'true') || items[0]).focus();
+    }
+    btn.addEventListener('click', e => setOpen(!menu.classList.contains('open'), e.detail === 0));
+    btn.addEventListener('keydown', e => {
+      if (e.key === 'ArrowDown'){ e.preventDefault(); setOpen(true, true); }
+    });
+    menu.addEventListener('keydown', e => {
+      const i = items.indexOf(document.activeElement);
+      if (e.key === 'Escape'){ setOpen(false); btn.focus(); }
+      else if (i > -1 && (e.key === 'ArrowDown' || e.key === 'ArrowUp')){
+        e.preventDefault();
+        items[(i + (e.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length].focus();
+      }
+    });
+    document.addEventListener('click', e => { if (!menu.contains(e.target)) setOpen(false); });
+    menu.addEventListener('focusout', e => { if (e.relatedTarget && !menu.contains(e.relatedTarget)) setOpen(false); });
+  })();
+</script>
 
 </body>
 </html>
