@@ -177,7 +177,7 @@ h1.eyebrow-pill { margin: 0; }
 .btn-ghost:hover { border-color: rgba(255,255,255,.22); background: var(--mt-input-bg); }
 
 .hero-meta { display: flex; gap: 28px; margin-top: 36px; flex-wrap: wrap; }
-.hero-meta-item { font: 400 13px/1.4 var(--mt-font-ui); color: var(--mt-fg-faint); }
+.hero-meta-item { font: 400 13px/1.4 var(--mt-font-ui); color: var(--mt-fg-muted); }
 .hero-meta-item b { display: block; color: var(--mt-fg); font-weight: 600; margin-bottom: 4px; font-size: 14px; }
 
 /* ── Phone mock ───────────────────────────────────────────── */
