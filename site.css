@@ -513,6 +513,7 @@ footer { padding: 56px 0 64px; border-top: 1px solid rgba(255,255,255,.06); }
 .legal-article li { margin-bottom: 8px; }
 .legal-article code { font-family: var(--mt-font-mono); background: var(--mt-input-bg); padding: 2px 6px; border-radius: 6px; font-size: 13px; color: var(--mt-fg); }
 .legal-article a { color: var(--mt-purple); border-bottom: 1px solid rgba(94,92,230,.4); }
+.legal-article a.btn-primary { color: #fff; border-bottom: 0; }
 .legal-article .callout {
   background: var(--mt-purple-15);
   border: 1px solid rgba(94,92,230,.22);
