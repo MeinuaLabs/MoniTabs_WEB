@@ -200,7 +200,7 @@
       <div class="feat">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5M12 15V3"/></svg></div>
         <h4>Backup &amp; restore</h4>
-        <p>Export your full database to a <code>.json</code> backup file. Restore anywhere, anytime.</p>
+        <p>Export your full database to a <code>.monitabs</code> backup file. Restore anywhere, anytime.</p>
       </div>
       <div class="feat">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></div>
@@ -261,11 +261,11 @@
       <div>
         <div class="section-eyebrow">Privacy</div>
         <h2 class="section-title">Your money data never leaves your phone.</h2>
-        <p class="section-lede" style="margin-bottom:32px">No account. No cloud. No telemetry. We don't run a server — there's nowhere for your data to go even if we wanted it there.</p>
+        <p class="section-lede" style="margin-bottom:32px">No account. No cloud. Your transactions, debts, and notes stay on your device — we don't run a server to send them to.</p>
         <ul class="privacy-list">
           <li><div><b>Stored locally</b><span>All transactions, debts, and notes live in a Room database on your device.</span></div></li>
-          <li><div><b>You own your backups</b><span>Export a <code>.json</code> file whenever you want. Move it. Encrypt it. Email it to yourself.</span></div></li>
-          <li><div><b>No tracking of your data</b><span>No analytics SDKs and no crash reporters. Your transactions, debts, and notes are never sent off-device.</span></div></li>
+          <li><div><b>You own your backups</b><span>Export a <code>.monitabs</code> backup file whenever you want. Move it. Keep it safe. Email it to yourself.</span></div></li>
+          <li><div><b>Your money data stays private</b><span>Your transactions, debts, and notes are never sent off-device. MoniTabs shows ads from Google AdMob, which collects device data such as the advertising ID — see our <a href="privacy.html">Privacy Policy</a>.</span></div></li>
           <li><div><b>No account needed</b><span>Install, open, start tracking. Nothing to sign up for, nothing to remember.</span></div></li>
         </ul>
       </div>
@@ -273,10 +273,10 @@
         <div class="head"><span class="dot"></span>device · status</div>
         <div class="row"><span class="k">data.location</span><span class="v">on-device</span></div>
         <div class="row"><span class="k">cloud.sync</span><span class="v off">disabled</span></div>
-        <div class="row"><span class="k">analytics</span><span class="v off">off</span></div>
+        <div class="row"><span class="k">money.data.shared</span><span class="v off">never</span></div>
         <div class="row"><span class="k">account.required</span><span class="v off">false</span></div>
-        <div class="row"><span class="k">backup.format</span><span class="v">.json</span></div>
-        <div class="row"><span class="k">storage.engine</span><span class="v">Room DB</span></div>
+        <div class="row"><span class="k">backup.format</span><span class="v">.monitabs</span></div>
+        <div class="row"><span class="k">ads</span><span class="v">Google AdMob</span></div>
       </div>
     </div>
   </div>
