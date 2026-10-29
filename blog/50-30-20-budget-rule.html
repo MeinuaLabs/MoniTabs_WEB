@@ -24,7 +24,7 @@
 <meta property="og:url" content="https://www.monitabs.com/blog/50-30-20-budget-rule.html"/>
 <meta property="og:image" content="https://www.monitabs.com/assets/monitabs-logo.png"/>
 <meta property="article:published_time" content="2026-09-11"/>
-<meta property="article:modified_time" content="2026-09-11"/>
+<meta property="article:modified_time" content="2026-10-29"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="The 50/30/20 Rule Explained (+ Free Money Tracker)"/>
 <meta name="twitter:description" content="Learn the 50/30/20 budgeting rule and use a simple money tracker to apply it — Needs, Wants, and Savings in three easy steps."/>
@@ -43,7 +43,7 @@
   "description": "The 50/30/20 rule is the simplest budgeting method that actually sticks. Here's how it works, why it beats complicated budgets, and how to apply it with a money tracker.",
   "image": "https://www.monitabs.com/assets/monitabs-logo.png",
   "datePublished": "2026-09-11",
-  "dateModified": "2026-09-11",
+  "dateModified": "2026-10-29",
   "author": { "@type": "Organization", "name": "Meinua Labs" },
   "publisher": {
     "@type": "Organization",
@@ -51,6 +51,19 @@
     "logo": { "@type": "ImageObject", "url": "https://www.monitabs.com/assets/monitabs-logo.png" }
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.monitabs.com/blog/50-30-20-budget-rule.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "The 50/30/20 Rule Explained: How to Budget $1,000 (in 90 Seconds)",
+  "description": "How to split a $1,000 budget with the 50/30/20 rule: $500 for needs, $300 for wants, $200 for savings and debt, and how to track it in MoniTabs.",
+  "thumbnailUrl": "https://i.ytimg.com/vi/Sop7tXHnq30/maxresdefault.jpg",
+  "uploadDate": "2026-10-29",
+  "duration": "PT1M33S",
+  "embedUrl": "https://www.youtube-nocookie.com/embed/Sop7tXHnq30",
+  "contentUrl": "https://www.youtube.com/watch?v=Sop7tXHnq30"
 }
 </script>
 <script type="application/ld+json">
@@ -129,6 +142,15 @@
         Most people quit budgeting not because they lack discipline, but because their budget has 15 categories and none of them match how they actually think about money.
       </div>
 
+      <!-- ── Video (loads YouTube only after a click) ── -->
+      <div class="yt-lite" data-id="Sop7tXHnq30" style="position:relative;aspect-ratio:16/9;margin:8px 0 12px;border-radius:var(--mt-radius-lg);overflow:hidden;background:#000">
+        <button type="button" aria-label="Play video: The 50/30/20 Rule Explained" style="all:unset;cursor:pointer;position:absolute;inset:0;display:block">
+          <img src="https://i.ytimg.com/vi/Sop7tXHnq30/maxresdefault.jpg" alt="The 50/30/20 rule explained: how to budget $1,000" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"/>
+          <svg viewBox="0 0 68 48" width="68" height="48" aria-hidden="true" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#f00"/><path d="M45 24 27 14v20z" fill="#fff"/></svg>
+        </button>
+      </div>
+      <p style="margin-top:0;font-size:14px;color:var(--mt-fg-muted)">Prefer to watch? The whole rule in 90 seconds, with a real $1,000 budget.</p>
+
       <p>Budgeting has a reputation for being tedious — line-itemed spreadsheets, dozens of categories, apps that ask you to tag every coffee. Most of that complexity doesn't make people better with money; it just makes them quit within a month. The 50/30/20 rule works because it does the opposite: it reduces your entire financial life to three numbers, which is exactly why it pairs so well with a simple money tracker instead of a full accounting system.</p>
 
       <h2>What the 50/30/20 rule actually says</h2>
@@ -192,6 +214,20 @@
 </footer>
 
 <script>
+  // Video — swap the thumbnail for the YouTube player on click
+  document.querySelectorAll('.yt-lite').forEach(function(box){
+    box.querySelector('button').addEventListener('click', function(){
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + box.dataset.id + '?autoplay=1&rel=0';
+      f.title = 'The 50/30/20 Rule Explained';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.allowFullscreen = true;
+      f.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0';
+      box.innerHTML = '';
+      box.appendChild(f);
+    });
+  });
+
   // Language menu — toggle, close on outside click / Esc, arrow-key navigation
   (function(){
     const menu = document.querySelector('.lang-menu');
