@@ -1,19 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4M4QTV2DJ"></script>
+<!-- Google tag (gtag.js) with Consent Mode v2 -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied', region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'], wait_for_update:500});
+  gtag('consent', 'default', {ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'granted'});
+  try { var c = localStorage.getItem('mt_consent'); if (c) gtag('consent', 'update', {analytics_storage: c === 'granted' ? 'granted' : 'denied'}); } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S4M4QTV2DJ"></script>
+<script>
   gtag('js', new Date());
-
   gtag('config', 'G-S4M4QTV2DJ');
 </script>
+<script src="/assets/consent.js?v=1" defer></script>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Privacy Policy — MoniTabs</title>
-<meta name="description" content="MoniTabs privacy policy. All your financial data stays on your device. No accounts, no cloud, no tracking."/>
+<meta name="description" content="MoniTabs privacy policy. Your financial data stays on your device. No accounts, no cloud. Ads by Google AdMob; website visits counted with Google Analytics."/>
 <link rel="icon" type="image/png" href="assets/monitabs-logo.png"/>
 <link rel="stylesheet" href="site.css?v=2"/>
 </head>
@@ -43,7 +48,7 @@
   <div class="wrap">
     <span class="eyebrow-pill" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08)"><span class="dot" style="background:var(--mt-purple);box-shadow:0 0 8px var(--mt-purple)"></span>Legal</span>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective date: October 26, 2026</p>
+    <p class="updated">Effective date: November 3, 2026</p>
   </div>
 </section>
 
@@ -95,6 +100,10 @@
         <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a><br/>
         <a href="https://www.facebook.com/ads/audiencenetwork/" target="_blank" rel="noopener">Meta Audience Network</a>
       </p>
+
+      <h3 id="website" style="font:600 18px/1.3 var(--mt-font-ui);color:var(--mt-fg);margin:24px 0 10px">2.3 This Website (monitabs.com)</h3>
+      <p>This website uses Google Analytics to count visits and see which pages are read. Google Analytics may use cookies and collects data such as pages visited, approximate location, device and browser type. It does not receive any data from the MoniTabs app.</p>
+      <p>Visitors in the EU, EEA, UK and Switzerland are asked first: analytics cookies are off until you tap “Accept”. You can change your choice at any time: <a href="#" onclick="window.mtConsentOpen&&window.mtConsentOpen();return false;">Cookie settings</a>.</p>
 
       <h2 id="use">3. How We Use Information</h2>
       <p>We do not collect, process, or use your personal financial data — it never leaves your device.</p>
