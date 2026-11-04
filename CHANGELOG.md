@@ -5,7 +5,8 @@ Also log things done **outside git**: Play Console, YouTube Studio, AdMob, deplo
 
 | Date | Change | Where | Expected effect |
 |---|---|---|---|
-| 2026-11-04 | Blog $5 post: added 10% example (≈ $29,100, S&P 500 long-term avg, with risk note) | local (not pushed yet) | – |
+| 2026-11-04 | Blog: Korean version "하루 5,000원이 10년 뒤 2,500만 원?" (won amounts, UTM `five-dollars-a-day-ko`, hreflang EN↔KO) | live | Korean search / Naver |
+| 2026-11-04 | Blog $5 post: added 10% example (≈ $29,100, S&P 500 long-term avg, with risk note) | live | – |
 | 2026-11-04 | Blog: "$5 a Day = $25,000 in 10 Years?" (EN), Play link with UTM campaign `five-dollars-a-day`; link to Short #2; sitemap updated | live | search traffic, blog installs |
 | 2026-11-04 | Privacy policy: new section 2.3 App Usage Analytics (Firebase, from app 1.0.20; no amounts/names; EU consent + Settings → Privacy options); effective date Nov 4 | live | rules (needed for app 1.0.20) |
 | 2026-11-03 | EU cookie banner (GA4 Consent Mode v2); UTM on 4 download buttons; privacy: website analytics section, removed "no tracking" | live | rules; website installs visible in Play |
