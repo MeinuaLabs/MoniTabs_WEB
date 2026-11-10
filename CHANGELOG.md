@@ -5,7 +5,7 @@ Also log things done **outside git**: Play Console, YouTube Studio, AdMob, deplo
 
 | Date | Change | Where | Expected effect |
 |---|---|---|---|
-| 2026-11-10 | New page /nutix/privacy.html: privacy policy for the game Nutix (AdMob, Firebase, invites; contact Meinua Labs); sitemap updated | not pushed yet | rules (Play + AdMob need a policy URL) |
+| 2026-11-10 | New page /nutix/privacy.html: privacy policy for the game Nutix (AdMob, Firebase, invites; contact Meinua Labs); sitemap updated | live | rules (Play + AdMob need a policy URL) |
 | 2026-11-04 | Blog: Korean version "하루 5,000원이 10년 뒤 2,500만 원?" (won amounts, UTM `five-dollars-a-day-ko`, hreflang EN↔KO) | live | Korean search / Naver |
 | 2026-11-04 | Blog $5 post: added 10% example (≈ $29,100, S&P 500 long-term avg, with risk note) | live | – |
 | 2026-11-04 | Blog: "$5 a Day = $25,000 in 10 Years?" (EN), Play link with UTM campaign `five-dollars-a-day`; link to Short #2; sitemap updated | live | search traffic, blog installs |
