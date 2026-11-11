@@ -5,6 +5,7 @@ Also log things done **outside git**: Play Console, YouTube Studio, AdMob, deplo
 
 | Date | Change | Where | Expected effect |
 |---|---|---|---|
+| 2026-11-11 | New page /nutix/delete-data.html: how to delete Nutix data (steps with invite code, what is deleted / kept); linked from Nutix privacy section 9; sitemap updated | live | rules (Play Data safety deletion URL) |
 | 2026-11-11 | New page /nutix/terms.html: Nutix Terms of Service (virtual items, purchases, ads, invites, Armenian law + EU consumer rights); linked from the Nutix privacy footer; sitemap updated | live | rules (Play trader status asks for a terms link) |
 | 2026-11-11 | Nutix privacy: removed the app-open ad sentence (the game no longer has app-open ads) | live | rules |
 | 2026-11-10 | New page /nutix/privacy.html: privacy policy for the game Nutix (AdMob, Firebase, invites; contact Meinua Labs); sitemap updated | live | rules (Play + AdMob need a policy URL) |
