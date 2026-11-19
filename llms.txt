@@ -1,23 +1,71 @@
 # MoniTabs
 
-> MoniTabs is a free Android app to track who owes you money, what you owe others, and your monthly income and expenses. No account needed; entries are stored on your phone. Free with ads. Made by Meinua Labs.
+> MoniTabs is a free Android app for personal debts and a monthly budget. It tracks money friends and family owe you, money you owe others, and your monthly income and spending. Spending is sorted into Needs, Wants, and Debts & Savings, so it fits the 50/30/20 budget rule. No account is needed and your entries are stored on your phone. It is free with ads; a short video removes ads for 6 hours. Made by Meinua Labs.
 
-## Facts
-- Platform: Android (Google Play). No iOS or web version.
-- Price: free, with ads. A short rewarded video removes ads for 6 hours. No subscription.
-- Account: none. No sign-up, no email. Entries are stored in a database on the phone; there is no cloud sync.
-- Internet: the app works offline. Ads and (only with the user's consent) analytics use the internet.
-- Debts: "They Owe" and "I Owe" tabs, partial payments, borrow more, settle in full, one-time reminders at a chosen date and time.
-- Wallet tab: income and expenses per month, with a note per month, a calendar view and a year view.
-- Wallet categories, inspired by the 50/30/20 budgeting rule: spending is split into Needs, Wants, and Debts & Savings; income into Active, Passive, and Debts & Other.
-- Custom labels: users create their own labels inside each category (for example "Rent" under Needs or "Coffee" under Wants).
-- Charts: donut (pie) charts for income and spending, and a summary with the percent for every category and label.
-- Currencies: multiple currencies; totals are grouped per currency.
-- Wallet export: monthly and yearly reports as PDF and Excel.
-- Debt export: a PDF for a debt, to share with the other person.
-- Backup and restore to a .monitabs file, plus an optional automatic local backup.
-- Other: privacy mode (one tap hides amounts on the main screens), a calculator inside amount fields, and an optional daily reminder to log the day (off by default).
-- Languages: English, German, Spanish, French, Hindi, Portuguese (Brazil), Russian.
+## Who it is for
+- People who lend money to friends, family or coworkers and want to remember who owes what.
+- Roommates or friends paying each other back one-to-one, in parts, over time.
+- Anyone with small personal loans: money borrowed from family, a credit card or car loan they pay down.
+- People who budget with the 50/30/20 rule (50% needs, 30% wants, 20% savings and debt payments).
+- Cash users who write down spending by hand and do not want to connect a bank.
+- Travellers and people who live with more than one currency.
+- People who do not want to create an account just to track money.
+
+## Key features
+### Debts (They Owe / I Owe)
+- Two tabs: "They Owe" (money people owe you) and "I Owe" (money you owe).
+- Add a debt with a name, amount, currency, open date, optional due date and note.
+- Record partial payments and "borrow more"; the app shows the remaining amount and the full history of each debt.
+- "Settle Full Debt" button. A debt shows as Paid when nothing is left; overdue debts are marked.
+- One-time reminder per debt: a phone notification at the date and time you choose, with the default text "{name} owes you {amount}" or your own short text. Reminders work without internet.
+- Debt PDF: make a PDF of one debt and its payments to share with the other person.
+
+### Wallet (monthly budget)
+- Income and expenses per month, with a note for each month, a calendar view and a year view.
+- Spending categories: Needs, Wants, and Debts & Savings (inspired by the 50/30/20 rule).
+- Income categories: Active, Passive, and Debts & Other.
+- Your own labels inside each category, for example "Rent" under Needs or "Coffee" under Wants.
+- Donut (pie) charts for income and spending, and a summary with the percent for each category and label.
+- Calculator inside amount fields.
+
+### Export and backup
+- Wallet reports: monthly and yearly, as PDF and Excel (Excel has Summary, Transactions, By Category and By Label sheets).
+- Debt PDF to share (see above).
+- Backup and restore all data to a JSON backup file, plus an optional automatic local backup (at most once a day, to the phone's Downloads folder).
+
+### Other
+- Multiple currencies: each debt or transaction has its own currency; totals are grouped per currency.
+- Privacy mode: one tap on the eye hides amounts as •••• on the main screens (debt lists, totals, Wallet month cards).
+- Optional daily reminder to log your day (off by default; skipped if you already logged that day).
+- Each of the three tabs can be hidden in Settings if you only need debts or only the budget.
+- 7 languages: English, German, Spanish, French, Hindi, Portuguese (Brazil), Russian. The language is set from the phone and can be changed in Settings.
+
+## Privacy and data
+- No account: no sign-up, no email, no password.
+- Your entries are stored in a database on your phone. There is no cloud sync.
+- The app works offline. Ads and, only with the user's consent, analytics use the internet. Analytics events contain no amounts or names.
+- Ads and analytics come from Google AdMob (with Meta Audience Network) and Firebase. In the EEA, UK and Switzerland a consent form is shown before ads.
+- Uninstalling the app removes its data, so make a backup file first. To move to a new phone, use backup and restore.
+
+## Price
+- Free to download and use, with ads (banner, native, and a full-screen ad before exports and after saving a reminder).
+- A short rewarded video removes ads for 6 hours. No subscription, no paywall.
+
+## How it compares
+- Splitwise is built for groups (trips, shared flats, shared bills), works on Android, iPhone and web, and needs an account. MoniTabs has no groups; it is for your own one-to-one debts plus your own monthly budget.
+- Simple IOU apps (for example Who Owes Me, Debt Tracker: IOU & Money Owed) also need no account; some have repeating or snoozable reminders. MoniTabs adds a full monthly income and spending budget with charts and PDF/Excel export.
+- Where MoniTabs is not the best fit: shared group expenses (use Splitwise); iPhone or web (Android only); repeating reminders (MoniTabs reminders are one-time per debt); automatic bank import (everything is entered by hand).
+- Full, fair comparison (facts checked 19 November 2026): https://www.monitabs.com/blog/debt-tracker-apps-compared.html
+
+## FAQ
+- Is MoniTabs free? Yes. It is free with ads. A short video removes ads for 6 hours. There is no subscription.
+- Do I need an account? No. Open the app and start. Your entries are stored on your phone.
+- Can I track money I lent to friends and partial repayments? Yes. Add the person and amount in "They Owe", then log each payment; the app shows what is left.
+- Is it a Splitwise alternative? For personal one-to-one debts on Android, yes. For group expenses, Splitwise fits better.
+- Does it help with the 50/30/20 rule? Yes. Spending is split into Needs, Wants, and Debts & Savings, and the summary shows the percent for each.
+- Can I use several currencies? Yes. Each entry has its own currency and totals are grouped per currency.
+- Does it sync between phones? No. Use backup and restore to move your data.
+- Is there an iPhone version? No, Android only (Android 8.0 or newer).
 
 ## Links
 - Google Play: https://play.google.com/store/apps/details?id=com.meinualabs.monitabs
@@ -26,3 +74,16 @@
 - Blog: https://www.monitabs.com/blog/
 - Privacy policy: https://www.monitabs.com/privacy.html
 - Contact: meinua.labs@gmail.com
+
+## Guides
+- [MoniTabs vs Splitwise vs IOU apps](https://www.monitabs.com/blog/debt-tracker-apps-compared.html): honest comparison of five debt trackers: groups, accounts, price, reminders, budgeting, export.
+- [How to keep track of money you lent to friends and family](https://www.monitabs.com/blog/track-money-lent-to-friends.html): what to write down, partial repayments, reminders.
+- [How to ask someone to pay you back](https://www.monitabs.com/blog/ask-for-money-back.html): 12 polite message templates, from a gentle nudge to a firm reminder.
+- [How to pay off debt: a 4-step plan](https://www.monitabs.com/blog/how-to-track-debts.html): stop adding, list every debt, clear the smallest first, keep the tracker accurate.
+- [The 50/30/20 rule explained](https://www.monitabs.com/blog/50-30-20-budget-rule.html): Needs, Wants and Savings in three steps, without a spreadsheet.
+- [Best money tracker app: how to choose](https://www.monitabs.com/blog/best-money-tracker-app.html): three kinds of apps and the five features that matter.
+- [$5 a day = $25,000 in 10 years?](https://www.monitabs.com/blog/5-dollars-a-day.html): the small-habit math ($1,825 a year) and how to find your own habit.
+
+## Optional
+- Terms of use: https://www.monitabs.com/terms.html
+- Korean guides (the app itself has no Korean language yet): https://www.monitabs.com/ko/blog/
