@@ -5,6 +5,7 @@ Also log things done **outside git**: Play Console, YouTube Studio, AdMob, deplo
 
 | Date | Change | Where | Expected effect |
 |---|---|---|---|
+| 2026-11-19 | New blog post /blog/debt-tracker-apps-compared.html: MoniTabs vs Splitwise vs 3 IOU apps (facts checked on Play + official sites 2026-11-19, honest "where MoniTabs is not the best"), FAQ schema, UTM `compare-apps`; blog list + sitemap updated | local, not deployed | searches like "splitwise alternative", AI answers |
 | 2026-11-19 | Site icon without the white ring (brand badge logo, 512 px + favicon + apple-touch icon) | local, not deployed | cleaner look in tabs and search results |
 | 2026-11-19 | Empty AdSense slot no longer leaves a big gap (hidden when unfilled or no ad after 6 s), EN + KO home | local, not deployed | no blank area above the footer |
 | 2026-11-19 | Homepage: 2 new FAQ items (account, languages) + FAQPage schema; meta "Works offline, no sign-up"; "private by default" → "no account needed" | local, not deployed | answers for Google/AI tools; true claims |
