@@ -1,0 +1,22 @@
+# MoniTabs
+
+> MoniTabs is a free Android app to track who owes you money, what you owe others, and your monthly income and expenses. No account needed; entries are stored on your phone. Free with ads. Made by Meinua Labs.
+
+## Facts
+- Platform: Android (Google Play). No iOS or web version.
+- Price: free, with ads. A short rewarded video removes ads for 6 hours. No subscription.
+- Account: none. No sign-up, no email. Entries are stored in a database on the phone; there is no cloud sync.
+- Internet: the app works offline. Ads and (only with the user's consent) analytics use the internet.
+- Debts: "They Owe" and "I Owe" tabs, partial payments, borrow more, settle in full, one-time reminders at a chosen date and time.
+- Wallet: monthly income and expenses by category, with charts.
+- Currencies: multiple currencies; totals are grouped per currency.
+- Export: PDF and Excel. Backup and restore to a file.
+- Languages: English, German, Spanish, French, Hindi, Portuguese (Brazil), Russian.
+
+## Links
+- Google Play: https://play.google.com/store/apps/details?id=com.meinualabs.monitabs
+- Website: https://www.monitabs.com/
+- FAQ: https://www.monitabs.com/#faq
+- Blog: https://www.monitabs.com/blog/
+- Privacy policy: https://www.monitabs.com/privacy.html
+- Contact: meinua.labs@gmail.com

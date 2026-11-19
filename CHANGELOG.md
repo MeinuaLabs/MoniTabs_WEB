@@ -5,6 +5,10 @@ Also log things done **outside git**: Play Console, YouTube Studio, AdMob, deplo
 
 | Date | Change | Where | Expected effect |
 |---|---|---|---|
+| 2026-11-19 | Site icon without the white ring (brand badge logo, 512 px + favicon + apple-touch icon) | local, not deployed | cleaner look in tabs and search results |
+| 2026-11-19 | Empty AdSense slot no longer leaves a big gap (hidden when unfilled or no ad after 6 s), EN + KO home | local, not deployed | no blank area above the footer |
+| 2026-11-19 | Homepage: 2 new FAQ items (account, languages) + FAQPage schema; meta "Works offline, no sign-up"; "private by default" → "no account needed" | local, not deployed | answers for Google/AI tools; true claims |
+| 2026-11-19 | /llms.txt: plain facts for AI tools (what MoniTabs is, price, account, languages, links) | local, not deployed | AI assistants describe the app correctly |
 | 2026-11-11 | New page /nutix/delete-data.html: how to delete Nutix data (steps with invite code, what is deleted / kept); linked from Nutix privacy section 9; sitemap updated | live | rules (Play Data safety deletion URL) |
 | 2026-11-11 | New page /nutix/terms.html: Nutix Terms of Service (virtual items, purchases, ads, invites, Armenian law + EU consumer rights); linked from the Nutix privacy footer; sitemap updated | live | rules (Play trader status asks for a terms link) |
 | 2026-11-11 | Nutix privacy: removed the app-open ad sentence (the game no longer has app-open ads) | live | rules |

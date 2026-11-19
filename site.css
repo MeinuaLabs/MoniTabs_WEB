@@ -540,3 +540,7 @@ footer { padding: 56px 0 64px; border-top: 1px solid rgba(255,255,255,.06); }
 .blog-card p { margin: 0; font: 400 14px/1.55 var(--mt-font-ui); color: var(--mt-fg-muted); }
 .blog-card .read-more { margin-top: auto; font: 600 13px/1 var(--mt-font-ui); color: var(--mt-purple); }
 .blog-article { max-width: 720px; margin: 0 auto; }
+
+/* Hide the AdSense slot when Google has no ad for it, so no empty gap is left (owner, 2026-11-19). */
+ins.adsbygoogle[data-ad-status="unfilled"] { display: none !important; }
+section:has(> ins.adsbygoogle[data-ad-status="unfilled"]) { display: none; }
