@@ -8,9 +8,15 @@
 - Account: none. No sign-up, no email. Entries are stored in a database on the phone; there is no cloud sync.
 - Internet: the app works offline. Ads and (only with the user's consent) analytics use the internet.
 - Debts: "They Owe" and "I Owe" tabs, partial payments, borrow more, settle in full, one-time reminders at a chosen date and time.
-- Wallet: monthly income and expenses by category, with charts.
+- Wallet tab: income and expenses per month, with a note per month, a calendar view and a year view.
+- Wallet categories, inspired by the 50/30/20 budgeting rule: spending is split into Needs, Wants, and Debts & Savings; income into Active, Passive, and Debts & Other.
+- Custom labels: users create their own labels inside each category (for example "Rent" under Needs or "Coffee" under Wants).
+- Charts: donut (pie) charts for income and spending, and a summary with the percent for every category and label.
 - Currencies: multiple currencies; totals are grouped per currency.
-- Export: PDF and Excel. Backup and restore to a file.
+- Wallet export: monthly and yearly reports as PDF and Excel.
+- Debt export: a PDF for a debt, to share with the other person.
+- Backup and restore to a .monitabs file, plus an optional automatic local backup.
+- Other: privacy mode (one tap hides amounts on the main screens), a calculator inside amount fields, and an optional daily reminder to log the day (off by default).
 - Languages: English, German, Spanish, French, Hindi, Portuguese (Brazil), Russian.
 
 ## Links

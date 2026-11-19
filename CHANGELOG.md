@@ -5,6 +5,7 @@ Also log things done **outside git**: Play Console, YouTube Studio, AdMob, deplo
 
 | Date | Change | Where | Expected effect |
 |---|---|---|---|
+| 2026-11-19 | llms.txt + comparison post: Wallet details (50/30/20-style categories, custom labels, charts, calendar/year view) and exports (Wallet monthly/yearly PDF + Excel, debt PDF), privacy mode, calculator, daily reminder | local, not deployed | AI tools describe all features |
 | 2026-11-19 | Privacy headline: "Your money data never leaves your phone" → "Your entries stay on your phone" (EN + KO), true claim per FEATURES.md | live | rules (no false privacy claims) |
 | 2026-11-19 | New blog post /blog/debt-tracker-apps-compared.html: MoniTabs vs Splitwise vs 3 IOU apps (facts checked on Play + official sites 2026-11-19, honest "where MoniTabs is not the best"), FAQ schema, UTM `compare-apps`; blog list + sitemap updated | live | searches like "splitwise alternative", AI answers |
 | 2026-11-19 | Site icon without the white ring (brand badge logo, 512 px + favicon + apple-touch icon) | live | cleaner look in tabs and search results |
